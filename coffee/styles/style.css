@@ -41,12 +41,7 @@ body {
 }
 
 .coffee-item:hover  {
-    align-self: stretch;
-}
-
-.coffee-item:hover > .coffee-link {
-    height: 100%;
-    justify-content: space-between;
+    transform: scale(1.1, 1.1);
 }
 
 .coffee-link {
@@ -92,18 +87,18 @@ body {
     left: 32%;
 }
 
-li:first-child .icon-smoke,
-li:first-child .icon-cup {
+.coffee-item:first-child .icon-smoke,
+.coffee-item:first-child .icon-cup {
     color: #ff7900;
 }
 
-li:nth-child(2) .icon-smoke,
-li:nth-child(2) .icon-cup {
+.coffee-item:nth-child(2) .icon-smoke,
+.coffee-item:nth-child(2) .icon-cup {
     color: #ffca28;
 }
 
-li:last-child .icon-smoke,
-li:last-child .icon-cup {
+.coffee-item:last-child .icon-smoke,
+.coffee-item:last-child .icon-cup {
     color: #bdbdbd;
 }
 
