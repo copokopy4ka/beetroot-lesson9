@@ -1,0 +1,129 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'hansKendrick', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+}
+
+.main {
+    background-color: #e2e7ec;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1100px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.reviews-blocks {
+    display: flex;
+    flex-wrap: wrap;
+    text-transform: uppercase;
+    padding-top: 80px;
+}
+
+.reviews-item-holder {
+    max-width: calc(100% / 3);
+    padding: 10px;
+}
+
+.reviews-item-holder.holder-big {
+    min-width: calc(100% - (100% / 3));
+}
+
+.reviews-item {
+    position: relative;
+    background-color: #fff;
+    height: 100%;
+}
+
+.reviews-link {
+    width: 100%;
+    color: #1d1d1d;
+}
+
+.reviews-img {
+    width: 100%;
+    min-height: 250px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.holder-big .reviews-img {
+    position: absolute;
+    min-height: 100%;
+    z-index: 2;
+}
+
+.holder-big .reviews-img:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-image: linear-gradient(to top, rgba(0,0,0,0.75) 0%,rgba(0,0,0,0) 100%);
+}
+
+.reviews-item-content {
+    padding: 25px 25px 0;
+    margin-bottom: 150px;
+}
+
+.holder-big .reviews-item-content {
+    position: absolute;
+    left: 40px;
+    bottom: 40px;
+    z-index: 5;
+    margin: 0;
+}
+
+.holder-big .reviews-item-content > .reviews-title {
+    font-size: 30px;
+    color: #fff;
+    max-width: 435px;
+}
+
+.reviews-date {
+    display: block;
+    font-size: 13px;
+    color: #818181;
+    margin-bottom: 25px;
+}
+
+.reviews-date.transparent {
+    color: transparent;
+}
+
+.reviews-title {
+    font-size: 22px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    color: #1d1d1d;
+}
+
+.reviews-avatar {
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+}
